@@ -1,0 +1,267 @@
+:root{
+
+    /*Color scheme for the truck and website*/   
+    --clr-NormalRed: rgb( 255, 0, 0);
+    --clr-NormalGreen: rgb( 0, 225, 0);
+    --clr-NormalYellow: #fef28b;
+    --clr-NormalWhite: rgb( 255, 255, 255);
+    --clr-NormalBlack: rgb( 0, 0, 0);
+    --clr-DarkRed: rgb(160, 0, 0);
+    --clr-DarkGreen: rgb( 0, 160, 0);
+
+    --Font-Light: font-weight: 200;
+    --Font-Normal: font-weight: 400;
+    --Font-Heavy: font-weight: 600;
+}
+/***************************************/
+/*#region Navbar*/
+* {
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.Navbar_wrapper{
+   display: flex;
+}
+.Navbar{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 20vh;
+    background-color: var(--clr-NormalBlack);
+}
+.Navbar_links{
+    margin: 7vh 0vw 3vh 10vw;
+}
+.Navbar_link{
+    color: var(--clr-NormalWhite);
+    text-decoration: none;
+    margin: 4vw;
+    font-size: 5vh;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: var(--clr-NormalWhite);
+}
+.Navbar_link:hover{
+    color: var(--clr-DarkRed);
+    transition: all 0.3s ease-in-out;
+}
+.Navbar img{
+    width: 175px;
+    height: 175px;
+    position:absolute ;
+    top: 0;
+    left: 0;
+}
+#Navbar_logo{
+    padding-bottom:2vh ;
+}
+
+/*#endregion Navbar*/
+/***************************************/
+/*#region Main*/
+.Menu_text{
+    margin-left: 30vw;
+    margin-top: 2vh;
+}
+.Menu_img img{
+    margin-left: 30vw;
+}
+.Newsletter_text{
+    margin-left: 30vw;
+}
+.Newsletter_img img{
+    margin-left: 30vw;
+}
+.Calendar_text{
+    margin-left: 30vw;
+}
+.Calendar_img img{
+    margin-left: 30vw;
+}
+/*#endregion Main*/
+/***************************************/
+/*#region footer*/
+.footer_wrapper{
+    width:100%;
+    height: 15%;
+}
+.footer_container{
+    background-color: var(--clr-NormalBlack);
+}
+/* Font Awsome logos */
+.footer_social_media_logos{
+    margin-left: 70vw;
+}
+.fa-brands{
+    color: var(--clr-NormalWhite);
+    font-size: 3.5vw;
+    position: relative;
+    margin:  2vh 2vw 2vh 2vw;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    
+}
+.fa-brands:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.75);
+    color: var(--clr-DarkRed);
+}
+/* JS footer */
+#footer{
+    color: var(--clr-NormalWhite);
+}
+/* Link section */
+.social_media_link{
+    text-decoration: none;
+    color: var(--clr-NormalWhite);
+    cursor: pointer;
+}
+.footer_links{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    margin: 4vh 0 0 4vw;
+}
+.footer_links_item{
+    list-style: none;
+    margin: 2.5vw;
+    color: var(--clr-NormalWhite);
+    font-size: 1.75vw;
+}
+.footer_links_item a{
+    text-decoration: none;
+    color: var(--clr-NormalWhite);
+    text-decoration: none;
+}
+.footer_links_item a:hover{
+    transition:all 0.3s ease-in-out;
+    color: var(--clr-DarkRed);
+
+}
+/*#endregion footer*/
+/***************************************/
+
+@media screen and (max-width: 650px) {
+    .Navbar_wrapper{
+        display: flex;
+     }
+     .Navbar{
+         display: grid;
+         grid-template-columns: 1fr 1fr ;
+         width: 100%;
+         height: 25vh;
+     }
+     .Navbar_links{
+         margin: 7vh 0vw 3vh 10vw;
+     }
+     .Navbar_link{
+         color: var(--clr-NormalWhite);
+         text-decoration: none;
+         margin: 4vw;
+         font-size: 5vh;
+         align-items: center;
+         transition: all 0.3s ease;
+         color: var(--clr-NormalWhite);
+     }
+     .Navbar_link:hover{
+         color: var(--clr-DarkRed);
+         transition: all 0.3s ease-in-out;
+     }
+     .Navbar img{
+         width: 175px;
+         height: 175px;
+         position:absolute ;
+         top: 0;
+         right: 0;
+     }
+     #Navbar_logo{
+         padding-bottom:2vh ;
+     }
+/*********************************************/
+/*#region Main*/
+.Menu_text{
+    margin-left: 0vw;
+}
+.Menu_img img{
+    margin-left: 0vw;
+}
+.Newsletter_text{
+    margin-left: 0vw;
+}
+.Newsletter_img img{
+    margin-left: 0vw;
+}
+.Calendar_text{
+    margin-left: 0vw;
+}
+.Calendar_img img{
+    margin-left: 0vw;
+}
+/*#endregion Main*/
+/*********************************************/
+/* #region Footer */
+
+     .footer_wrapper{
+        width:100%;
+        height: 15%;
+    }
+    .footer_container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: var(--clr-NormalBlack);
+    }
+    /* Font Awsome logos */
+    .footer_social_media_logos{
+        margin-left: 10svw;
+    }
+    .fa-brands{
+        
+        color: var(--clr-NormalWhite);
+        font-size: 15.5vw;
+        position: relative;
+        margin:  12vh 5vw 0vh 5vw;
+        cursor: pointer;
+        transition:all 0.3s ease-in-out;
+        
+    }
+    .fa-brands:hover{
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.75);
+        color: var(--clr-DarkRed);
+    }
+    /* JS footer */
+    #footer{
+        color: var(--clr-NormalWhite);
+        position: absolute;
+        margin-top: 84vh ;
+    }
+    /* Link section */
+    .social_media_link{
+        text-decoration: none;
+        color: var(--clr-NormalWhite);
+        cursor: pointer;
+    }
+    .footer_links{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 4vh 0 0 4vw;
+    }
+    .footer_links_item{
+        list-style: none;
+        margin: 2.5vw;
+        color: var(--clr-NormalWhite);
+        font-size: 5vw;
+    }
+    .footer_links_item a{
+        text-decoration: none;
+        color: var(--clr-NormalWhite);
+        text-decoration: none;
+    }
+    .footer_links_item a:hover{
+        transition:all 0.3s ease-in-out;
+        color: var(--clr-DarkRed);
+    }
+    /*#endregion Footer*/
+}
