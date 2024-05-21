@@ -1,13 +1,13 @@
 :root{
 
     /*Color scheme for the truck and website*/   
-    --clr-NormalRed: rgb( 255, 0, 0);
-    --clr-NormalGreen: rgb( 0, 225, 0);
+    --clr-NormalRed: #BE1E2D;
+    --clr-NormalGreen: #36743A;
     --clr-NormalYellow: #fef28b;
-    --clr-NormalWhite: rgb( 255, 255, 255);
-    --clr-NormalBlack: rgb( 0, 0, 0);
-    --clr-DarkRed: rgb(160, 0, 0);
-    --clr-DarkGreen: rgb( 0, 160, 0);
+    --clr-NormalWhite: #ffffff;
+    --clr-NormalBlack: #000000;
+    --clr-DarkRed: #a00000;
+    --clr-DarkGreen: #00a000;
 
     --Font-Light: font-weight: 200;
     --Font-Normal: font-weight: 400;
@@ -21,6 +21,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-color: #f5f5f5;
+}
 
 .Navbar_wrapper{
    display: flex;
@@ -29,7 +32,7 @@ html{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100%;
-    height: 20vh;
+    height: 22vh;
     background-color: var(--clr-NormalBlack);
 }
 .Navbar_links{
@@ -64,22 +67,43 @@ html{
 /*#region Main*/
 .Menu_text{
     margin-left: 30vw;
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 .Menu_img img{
     margin-left: 30vw;
+    margin-top: 5vh;
+    height: 100vh;
+    border: solid var(--clr-NormalBlack);
+}
+.Events_text{
+    margin-left: 30vw;
+    margin-top: 5vh;
+}
+.Events_img img{
+    margin-left: 30vw;
+    margin-top: 5vh;
+    height: 100vh;
+    border: solid var(--clr-NormalBlack);
 }
 .Newsletter_text{
     margin-left: 30vw;
+    margin-top: 5vh;
 }
 .Newsletter_img img{
     margin-left: 30vw;
+    margin-top: 5vh;
+    height: 100vh;
+    border: solid var(--clr-NormalBlack);
 }
 .Calendar_text{
     margin-left: 30vw;
+    margin-top: 5vh;
 }
 .Calendar_img img{
     margin-left: 30vw;
+    margin-top: 5vh;
+    height: 100vh;
+    border: solid var(--clr-NormalBlack);
 }
 /*#endregion Main*/
 /***************************************/
@@ -151,10 +175,10 @@ html{
          display: grid;
          grid-template-columns: 1fr 1fr ;
          width: 100%;
-         height: 25vh;
+         height: 30vh;
      }
      .Navbar_links{
-         margin: 7vh 0vw 3vh 10vw;
+         margin: 7vh 0vw 2vh 10vw;
      }
      .Navbar_link{
          color: var(--clr-NormalWhite);
@@ -170,8 +194,8 @@ html{
          transition: all 0.3s ease-in-out;
      }
      .Navbar img{
-         width: 175px;
-         height: 175px;
+         width: 225px;
+         height: 225px;
          position:absolute ;
          top: 0;
          right: 0;
